@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const MyApp()); // calls MyApp class
 }
 
 class MyApp extends StatelessWidget {
@@ -12,7 +12,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'My Travel Budget App',
-      home: RandomWords(), // 1. calls the RandomWords() class
+      theme: ThemeData(
+        primarySwatch: Colors.purple,
+      ),
+      home: RandomWords(), // calls the RandomWords() class
     );
   }
 }
@@ -67,5 +70,5 @@ class RandomWordsState extends State<RandomWords> {
 
 class RandomWords extends StatefulWidget {
   @override
-  RandomWordsState createState() => RandomWordsState(); // 2. ???
+  RandomWordsState createState() => RandomWordsState(); //
 }
