@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'My Travel Budget App',
-      home: RandomWords(),
+      home: RandomWords(), // 1. calls the RandomWords() class
     );
   }
 }
@@ -67,5 +67,5 @@ class RandomWordsState extends State<RandomWords> {
 
 class RandomWords extends StatefulWidget {
   @override
-  RandomWordsState createState() => RandomWordsState();
+  RandomWordsState createState() => RandomWordsState(); // 2. ???
 }
